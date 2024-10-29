@@ -1,3 +1,6 @@
+# MVP124
+Implementation of MVP124, The L335 Class Project
+
 # Animate124 - threestudio
 
 <img src="https://github.com/HeliosZhao/Animate124/assets/43061147/a592722c-d03c-47e9-aa08-cf099b4cb440" width="" height="200">
