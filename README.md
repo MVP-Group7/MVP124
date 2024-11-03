@@ -1,5 +1,7 @@
 # MVP124
 Implementation of MVP124, The L335 Class Project
+1. Run MVP124.ipynb
+2. The checkpoints are stored in https://drive.google.com/drive/folders/1QrATN4nvVh4UW--TeBOioYmaPnWXHQum?usp=drive_link
 
 # Animate124 - threestudio
 
