@@ -123,6 +123,7 @@ system:
     lambda_rgb: 1000.
     lambda_mask: 100.
     lambda_sd: 0.025
+    lambda_sd_img: 0.00025
     lambda_3d_sd: 1.
     lambda_orient: 0.
     lambda_normal_smoothness_2d: 1000.
