@@ -133,13 +133,13 @@ class ControlNetGuidance(BaseObject):
         self.unet = self.pipe.unet.eval()
         self.controlnet = self.pipe.controlnet.eval()
 
-        # if self.cfg.control_type == "normal":
-        #     self.preprocessor = NormalBaeDetector.from_pretrained(
-        #         "lllyasviel/Annotators"
-        #     )
-        #     self.preprocessor.model.to(self.device)
-        # elif self.cfg.control_type == "canny":
-        #     self.preprocessor = CannyDetector()
+        if self.cfg.control_type == "normal":
+            self.preprocessor = NormalBaeDetector.from_pretrained(
+                "lllyasviel/Annotators"
+            )
+            self.preprocessor.model.to(self.device)
+        elif self.cfg.control_type == "canny":
+            self.preprocessor = CannyDetector()
 
         for p in self.vae.parameters():
             p.requires_grad_(False)

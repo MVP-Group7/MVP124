@@ -1,4 +1,8 @@
-# MVP124
+# Animating Dynamic 3D Scenes from a Single Image
+This is the repository for Machine Visual Perception Course Project by Group 7 (Dantong Liu, Hetong Shen, Huadi Wang). Based on [Aminate124](https://github.com/HeliosZhao/Animate124/tree/threestudio?tab=readme-ov-file), we re-implement and fine-tune the dynamic 3D scenes generation. We also provide results and metrics of our training using benchmark examples and personalized images.
+
+
+
 Implementation of MVP124, The L335 Class Project
 1. Run MVP124.ipynb
 2. The checkpoints are stored in https://drive.google.com/drive/folders/1QrATN4nvVh4UW--TeBOioYmaPnWXHQum?usp=drive_link
