@@ -1,4 +1,5 @@
 # Animating Dynamic 3D Scenes from a Single Image
+![Demo](demo/space-shuttle.gif)
 
 This repository hosts the Machine Visual Perception course project by Group 7 (Dantong Liu, Hetong Shen, Huadi Wang). Based on [Aminate124](https://github.com/HeliosZhao/Animate124/tree/threestudio?tab=readme-ov-file), we have re-implemented the training code in Jupyter notebooks and fine-tuned configurations to generate high-quality dynamic 3D scenes generation from a single image. The repository also includes training results and metrics evaluated on benchmark examples and personalized images.
 
@@ -69,24 +70,24 @@ DYNAMIC_PROMPT="a panda is dancing"
 CN_PROMPT="a <token> is dancing"
 
 # --------- Stage 1 (Static Stage) --------- #
-python launch.py --config custom/threestudio-animate124/configs/animate124-stage1.yaml --train --gpu $gpu \
-data.image.image_path=custom/threestudio-animate124/load/${DATA_DIR}/_rgba.png \
+python launch.py --config custom/MVP124/configs/animate124-stage1.yaml --train --gpu $gpu \
+data.image.image_path=custom/MVP124/load/${DATA_DIR}/_rgba.png \
 system.prompt_processor.prompt="${STATIC_PROMPT}"
 
 # --------- Stage 2 (Dynamic Coarse Stage) --------- #
 ckpt=outputs/animate124-stage1/${STATIC_PROMPT}@LAST/ckpts/last.ckpt
-python launch.py --config custom/threestudio-animate124/configs/animate124-stage2-ms.yaml --train --gpu $gpu \
-data.image.image_path=custom/threestudio-animate124/load/${DATA_DIR}/_rgba.png \
+python launch.py --config custom/MVP124/configs/animate124-stage2-ms.yaml --train --gpu $gpu \
+data.image.image_path=custom/MVP124/load/${DATA_DIR}/_rgba.png \
 system.prompt_processor.prompt="${DYNAMIC_PROMPT}" \
 system.weights="$ckpt"
 
 # --------- Stage 2 (Semantic Refinement Stage) --------- #
 ckpt=outputs/animate124-stage2/${DYNAMIC_PROMPT}@LAST/ckpts/last.ckpt
-python launch.py --config custom/threestudio-animate124/configs/animate124-stage3-ms.yaml --train --gpu $gpu \
-data.image.image_path=custom/threestudio-animate124/load/${DATA_DIR}/_rgba.png \
+python launch.py --config custom/MVP124/configs/animate124-stage3-ms.yaml --train --gpu $gpu \
+data.image.image_path=custom/MVP124/load/${DATA_DIR}/_rgba.png \
 system.prompt_processor.prompt="${DYNAMIC_PROMPT}" \
 system.prompt_processor_cn.prompt="${CN_PROMPT}" \
-system.prompt_processor_cn.learned_embeds_path=custom/threestudio-animate124/load/${DATA_DIR}/learned_embeds.bin \
+system.prompt_processor_cn.learned_embeds_path=custom/MVP124/load/${DATA_DIR}/learned_embeds.bin \
 system.weights="$ckpt"
 
 ```
