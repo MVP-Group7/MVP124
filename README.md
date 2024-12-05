@@ -104,7 +104,9 @@ system.weights="$ckpt"
     ├── configs                 # Configuration files for three training stages
     ├── data                    # Training dataset
     ├── load                    # Source images used for benchmarks and personalized training
+    ├── metrics                 # Training metrics
     ├── models                  # Pretrained models
+    ├── results                 # Generation results from benchmarks and custom images
     ├── scripts                 
     ├── systems                 # Dynamic 3D scene generation pipeline
     ├── textual-inversion
