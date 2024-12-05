@@ -12,7 +12,7 @@ This repository hosts the Machine Visual Perception course project by Group 7 (D
 The implementation is an extension of [threestudio](https://github.com/threestudio-project/threestudio), a unified framework for 3D content creation.
 
 ## Quickstart with Google Colab
-Run `MVP124.ipynb` file for dynamic 3D scene generation.
+Run `MVP124.ipynb` file for dynamic 3D scene generation. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MVP-Group7/MVP124/blob/main/MVP124.ipynb)
 
 ## Training
 ### Installation
