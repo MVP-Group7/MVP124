@@ -1,6 +1,24 @@
 # Animating Dynamic 3D Scenes from a Single Image
-This is the repository for Machine Visual Perception Course Project by Group 7 (Dantong Liu, Hetong Shen, Huadi Wang). Based on [Aminate124](https://github.com/HeliosZhao/Animate124/tree/threestudio?tab=readme-ov-file), we re-implement and fine-tune the dynamic 3D scenes generation. We also provide results and metrics of our training using benchmark examples and personalized images.
+This repository hosts the Machine Visual Perception course project by Group 7 (Dantong Liu, Hetong Shen, Huadi Wang). Based on [Aminate124](https://github.com/HeliosZhao/Animate124/tree/threestudio?tab=readme-ov-file), we have re-implemented the training code in Jupyter notebooks and fine-tuned configurations to generate high-quality dynamic 3D scenes generation from a single image. The repository also includes training results and metrics evaluated on benchmark examples and personalized images.
 
+The implementation is an extension of [threestudio](https://github.com/threestudio-project/threestudio), a unified framework for 3D content creation.
+
+### Directory Layout
+    .
+    ├── configs                 # Configuration files for three training stages
+    ├── data                    # Training dataset
+    ├── load                    # Source images used for benchmarks and personalized training
+    ├── models                  # Pretrained models
+    ├── scripts                 
+    ├── systems
+    ├── textual-inversion
+    ├── utils
+    ├── MVP124.ipynb            # Pretrained models
+    └── README.md
+
+
+
+# Credits
 
 
 Implementation of MVP124, The L335 Class Project
