@@ -1,6 +1,6 @@
 # Animating Dynamic 3D Scenes from a Single Image
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="./results/demo/space-shuttle.gif" alt="space-shuttle" style="width: 200px; height: auto;"/>
+  <img src="./results/demo/panda-dance.gif" alt="panda-dance" style="width: 200px; height: auto;"/>
   <img src="./results/demo/space-shuttle.gif" alt="space-shuttle" style="width: 200px; height: auto;"/>
   <img src="./results/demo/cat-guitar.gif" alt="cat-guitar" style="width: 200px; height: auto;"/>
   <img src="./results/demo/winnie-bear.gif" alt="winnie-bear" style="width: 200px; height: auto;"/>
