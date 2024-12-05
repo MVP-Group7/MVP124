@@ -1,5 +1,11 @@
 # Animating Dynamic 3D Scenes from a Single Image
-![Demo](./results/demo/space-shuttle.gif)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="./results/demo/space-shuttle.gif" alt="space-shuttle" style="width: 200px; height: auto;"/>
+  <img src="./results/demo/space-shuttle.gif" alt="space-shuttle" style="width: 200px; height: auto;"/>
+  <img src="./results/demo/cat-guitar.gif" alt="cat-guitar" style="width: 200px; height: auto;"/>
+  <img src="./results/demo/winnie-bear.gif" alt="winnie-bear" style="width: 200px; height: auto;"/>
+</div>
+
 
 This repository hosts the Machine Visual Perception course project by Group 7 (Dantong Liu, Hetong Shen, Huadi Wang). Based on [Aminate124](https://github.com/HeliosZhao/Animate124/tree/threestudio?tab=readme-ov-file), we have re-implemented the training code in Jupyter notebooks and fine-tuned configurations to generate high-quality dynamic 3D scenes generation from a single image. The repository also includes training results and metrics evaluated on benchmark examples and personalized images.
 
